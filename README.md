@@ -47,7 +47,7 @@ So to evaluate an expression involving symmetric differences among three element
     - Use a list to keep the index of used value
     - iterate the list (i)
         - if the value = arg -> add the value and move on 
-        - if i is not the last: iterate from (i + 1) last item and check
+        - if i is not the last: iterate from (i + 1) to last item and check
 - File: Pairwise.kt
     
 ### Bubble Sort
@@ -55,3 +55,18 @@ So to evaluate an expression involving symmetric differences among three element
     - Sort list without using built-in .sort
     - The bubble sort method starts at the beginning of an unsorted array and 'bubbles up' unsorted values towards the end, iterating through the array until it is completely sorted
 - File: BubbleSort.kt
+
+### Selection Sort
+- Requirements: 
+    - Selection sort works by selecting the minimum value in a list and swapping it with the first value in the list. 
+    - It then starts at the second position, selects the smallest value in the remaining list, and swaps it with the second element. 
+    - It continues iterating through the list and swapping elements until it reaches the end of the list
+- File: SelectionSort.kt
+
+### Insertion Sort
+- Requirements: 
+    - Building up a sorted array at the beginning of the list. 
+    - It begins the sorted array with the first element. 
+    - hen it inspects the next element and swaps it backwards into the sorted array until it is in sorted position. 
+    - It continues iterating through the list and swapping new items backwards into the sorted portion until it reaches the end.
+- File: InsertionSort.kt
