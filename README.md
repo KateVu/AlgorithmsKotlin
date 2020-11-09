@@ -25,3 +25,15 @@ So to evaluate an expression involving symmetric differences among three element
     - Use ArrayList<Array<Any>> for params of the function
     - Iterating newInv, if item found -> add amount, if not -> add item
 - File: InventoryUpdate.kt
+
+### No Repeats Please
+- Requirements:
+    - Return the number of total permutations of the provided string that don't have repeated consecutive letters. 
+    - Assume that all characters in the provided string are each unique (no need to handle duplicated in result)
+    - For example, aab should return 2 because it has 6 total permutations (aab, aab, aba, aba, baa, baa), but only 2 of them (aba and aba) don't have the same letter (in this case a) repeating.
+- Solution: 
+    - split string into list of Char
+    - Using Heap's algorithms to generate list of permutations 
+    - Using regex to filter permuations that don't have repeated consecutive letters
+- File: PermAlone.kt
+
