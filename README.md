@@ -50,3 +50,8 @@ So to evaluate an expression involving symmetric differences among three element
         - if i is not the last: iterate from (i + 1) last item and check
 - File: Pairwise.kt
     
+### Bubble Sort
+- Requirements:
+    - Sort list without using built-in .sort
+    - The bubble sort method starts at the beginning of an unsorted array and 'bubbles up' unsorted values towards the end, iterating through the array until it is completely sorted
+- File: BubbleSort.kt
