@@ -1,4 +1,5 @@
 /**
+ * @author: KateVu
  * Return the number of total permutations of the provided string that don't have repeated consecutive letters.
  * Assume that all characters in the provided string are each unique.
  * For example, aab should return 2 because it has 6 total permutations (aab, aab, aba, aba, baa, baa),
@@ -16,8 +17,8 @@ fun permAlone (string: String): Int {
     val regex = Regex("([a-z])\\1")
 
     //slice the input string into list
-    var listChar = string.toCharArray().toMutableList()
-    var permutations = mutableListOf<String>()
+    val listChar = string.toCharArray().toMutableList()
+    val permutations = mutableListOf<String>()
     var filter = mutableListOf<String>()
     var temp: Char
 

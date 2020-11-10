@@ -1,4 +1,5 @@
 /**
+ * @author: KateVu
  * Selection sort works by selecting the minimum value in a list and swapping it with the first value in the list.
  * It then starts at the second position, selects the smallest value in the remaining list,
  * and swaps it with the second element
@@ -12,12 +13,12 @@ fun main (args: Array<String>) {
 fun selectionSort (list: MutableList<Int>): MutableList<Int> {
 
     fun swap(index1: Int, index2: Int) {
-        var temp = list[index1]
+        val temp = list[index1]
         list[index1] = list[index2]
         list[index2] = temp
     }
 
-    if (list.size == 1) return list
+    if (list.size < 1) return list
 
     for (i in 0 until list.size - 1) {
         var min = list[i]

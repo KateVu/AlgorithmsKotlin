@@ -1,4 +1,5 @@
 /**
+ * @author: KateVu
  * Building up a sorted array at the beginning of the list. It begins the sorted array with the first element.
  * Then it inspects the next element and swaps it backwards into the sorted array until it is in sorted position.
  * It continues iterating through the list and swapping new items backwards into the sorted portion until it reaches the end.
@@ -10,15 +11,8 @@ fun main(args: Array<String>) {
 }
 
 fun insertionSort(list: MutableList<Int>): MutableList<Int> {
-
-    fun swap(index1: Int, index2: Int) {
-        var temp = list[index1]
-        list[index1] = list[index2]
-        list[index2] = temp
-    }
-
     //only one item, return
-    if (list.size == 1) return list
+    if (list.size < 2) return list
 
     //iterate the list
     for (i in 1 until list.size) {

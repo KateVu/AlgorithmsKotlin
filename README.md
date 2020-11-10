@@ -70,3 +70,18 @@ So to evaluate an expression involving symmetric differences among three element
     - hen it inspects the next element and swaps it backwards into the sorted array until it is in sorted position. 
     - It continues iterating through the list and swapping new items backwards into the sorted portion until it reaches the end.
 - File: InsertionSort.kt
+
+### Quick Sort
+- Requirements: 
+    - A pivot value is chosen in the original array.
+    - The array is then partitioned into two subarrays of values less than and greater than the pivot value.
+    - We then combine the result of recursively calling the quick sort algorithm on both sub-arrays.
+    - This continues until the base case of an empty or single-item array is reached, which we return.
+    - The unwinding of the recursive calls return us the sorted array
+- File: QuickSort.kt
+
+### Merge Sort
+- Requirements: 
+    - Recursively split the input array in half until a sub-array with only one element is produced.
+    - Merge each sorted sub-array together to produce the final sorted array.
+- File: MergeSort.kt
